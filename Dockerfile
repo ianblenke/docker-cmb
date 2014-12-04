@@ -1,6 +1,6 @@
 FROM java:8
 
-RUN apt-get update ; apt-get install -y supervisord
+RUN apt-get update ; apt-get install -y supervisor
 
 ENV CMB_VERSION 2.2.42
 
