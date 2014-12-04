@@ -8,7 +8,8 @@ RUN mkdir -p /app; curl https://s3-us-west-1.amazonaws.com/cmb-releases/${CMB_VE
 
 ADD conf.d/ /etc/supervisor/conf.d/
 ADD run.sh /run.sh
+RUN chmod 755 /run.sh
 
-EXPOSE 52525
+EXPOSE 5555 6059 6061 7777 52525
 
 CMD /run.sh
